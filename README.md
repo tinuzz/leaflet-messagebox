@@ -28,10 +28,14 @@ or, when implicitly used with the map:
 
 There are only two options:
 
-`position:` The standard Leaflet.Control position parameter. Defaults to 'topright'
+`position:` (string) The standard Leaflet.Control position parameter. Optional, defaults to 'topright'
 
-`timeout:` The duration the messagebox is shown in milliseconds. Defaults to 3 seconds.
+`timeout:` (integer) The duration the messagebox is shown in milliseconds. Optional, defaults to 3000 (3 sec).
 
 ## Styling ##
 
 The messagebox can be styled with CSS, see [the css file]( leaflet-messagebox.css) for details.
+
+# License
+
+Leaflet.Messagebox is free software. Please see [LICENSE](LICENSE) for details.
