@@ -3,7 +3,8 @@ A Leaflet plugin to display a temporary message on a map
 # Leaflet.Messagebox
 
 Leaflet.Messagebox is a simple control to display a temporary message, like an
-error, on a [Leaflet](http://leafletjs.com/) map.
+error, on a [Leaflet](http://leafletjs.com/) map. The message is hidden after
+a configurable timeout.
 
 ## Using the Messagebox
 
