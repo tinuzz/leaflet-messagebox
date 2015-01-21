@@ -33,4 +33,4 @@ There are only two options:
 
 ## Styling ##
 
-The messagebox can be styled with CSS, see the css file for details.
+The messagebox can be styled with CSS, see [the css file]( leaflet-messagebox.css) for details.
