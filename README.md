@@ -11,11 +11,13 @@ a configurable timeout.
 
 There a are two ways to add the messagebox to the map. First:
 
-    var box = L.control.messagebox().addTo(map);
+    var options = { timeout: 5000 }
+    var box = L.control.messagebox(options).addTo(map);
 
 or, add it on map initialization:
 
     var map = L.map( 'mapdiv', {'messagebox': true, ...} );
+    map.messagebox.options.timeout = 5000;
 
 Then, show a message:
 
