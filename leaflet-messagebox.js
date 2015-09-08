@@ -16,7 +16,10 @@ L.Control.Messagebox = L.Control.extend({
         elem.style.display = 'block';
 
         var timeout = this.options.timeout;
-        setTimeout(function () {
+        if (typeof this.timeoutID == 'number') {
+            clearTimeout(this.timeoutID);
+        }
+        this.timeoutID = setTimeout(function () {
             elem.style.display = 'none';
         }, timeout);
     }
