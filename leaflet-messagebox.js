@@ -10,12 +10,13 @@ L.Control.Messagebox = L.Control.extend({
         return this._container;
     },
 
-    show: function (message) {
+    show: function (message, timeout) {
         var elem = this._container;
         elem.innerHTML = message;
         elem.style.display = 'block';
 
-        var timeout = this.options.timeout;
+        timeout = timeout || this.options.timeout;
+
         if (typeof this.timeoutID == 'number') {
             clearTimeout(this.timeoutID);
         }
