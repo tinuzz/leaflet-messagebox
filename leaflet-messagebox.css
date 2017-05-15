@@ -1,6 +1,91 @@
+@font-face {
+	font-family: 'isabelc';
+	src: url('isa_framework/font/isabelc.eot');
+	src: 	url('isa_framework/font/isabelc.eot#iefix') format('embedded-opentype'),
+		url('isa_framework/font/isabelc.woff2') format('woff2'),
+		url('isa_framework/font/isabelc.woff') format('woff'),
+		url('isa_framework/font/isabelc.ttf') format('truetype'),
+		url('isa_framework/font/isabelc.svg#isabelc') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	}
 .leaflet-control-messagebox {
 	display: none; /* Initially hidden */
-	border: 2px solid red;
-	background-color: white;
+	border: 1px solid #d2dbf4;
+	background-color: #f4f8fd;
+	padding: 3px 10px;
+	margin:5px;
+}
+.leaflet-control-messagebox::before {
+        top:0;
+        left:-5px;
+        font-family: isabelc;
+	font-style: normal;
+	font-weight: 400;
+        padding-right:10px;
+        content:'\e809';
+        font-weight: bold;
+    }
+    
+.leaflet-control-messagebox-error {
+	display: none; /* Initially hidden */
+	border: 1px solid #f1a899;
+	background-color: #fddfdf;
+	color: #5f3f3f;
 	padding: 3px 10px;
 }
+.leaflet-control-messagebox-error:before {
+        top:0;
+        left:-5px;
+        font-family: isabelc;
+	font-style: normal;
+	font-weight: 400;
+        padding-right:10px;
+        content:"\e80d Error:";
+        color:#1a1a1a;
+        font-weight: bold;
+    }
+
+
+
+.leaflet-control-messagebox-warning {
+	display: none; /* Initially hidden */
+	border: 1px solid #dad55e;
+	background-color: #fffa90;
+	color: #777620;
+	padding: 3px 10px;
+}
+.leaflet-control-messagebox-warning:before {
+        top:0;
+        left:-5px;
+        font-family: isabelc;
+	font-style: normal;
+	font-weight: 400;
+        padding-right:10px;
+        content:"\e809 Advertencia:";
+        font-weight: bold;
+        color:#1a1a1a;
+    }
+
+.leaflet-control-messagebox-success {
+	display: none; /* Initially hidden */
+	border: 1px solid #4F8A10;
+	background-color: #DFF2BF;
+	color:  #4F8A10;
+	padding: 3px 10px;
+}
+.leaflet-control-messagebox-success:before {
+        top:0;
+        left:-5px;
+        font-family: isabelc;
+	font-style: normal;
+	font-weight: 400;
+        padding-right:10px;
+        content:'\e80c';
+        font-weight: bold;
+        color:#4F8A10;
+    }
+    
+
+
+

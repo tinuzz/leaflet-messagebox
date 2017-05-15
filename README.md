@@ -26,14 +26,23 @@ Then, show a message:
 or, when implicitly used with the map:
 
     map.messagebox.show( 'This is the message' );
+    
+more examples:
+
+	map.messagebox.show( 'this is a success message', map.messagebox.options.timeout, 'success');
+	map.messagebox.show( 'this is a error message', map.messagebox.options.timeout, 'error');
+	map.messagebox.show( 'this is a warning message', map.messagebox.options.timeout, 'warning');
+	
 
 ## Available Options:
 
-There are only two options:
+There are only three options:
 
 `position:` (string) The standard Leaflet.Control position parameter. Optional, defaults to 'topright'
 
 `timeout:` (integer) The duration the messagebox is shown in milliseconds. Optional, defaults to 3000 (3 sec).
+
+`style:` (string) a especific style, beetween (default, warning, error or success )
 
 ## Styling ##
 
