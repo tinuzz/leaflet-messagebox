@@ -1,4 +1,4 @@
-A Leaflet plugin to display a temporary message on a map
+A Leaflet plugin to display a temporary message on a map. 
 ([Demo](https://www.grendelman.net/leaflet/))
 
 # Leaflet.Messagebox
@@ -19,7 +19,7 @@ or, add it on map initialization:
     var map = L.map( 'mapdiv', {'messagebox': true, ...} );
     map.messagebox.options.timeout = 5000;
 
-Then, show a message:
+Then, show a message/alert:
 
     box.show( 'This is the message' );
 
@@ -33,7 +33,7 @@ There are only two options:
 
 `position:` (string) The standard Leaflet.Control position parameter. Optional, defaults to 'topright'
 
-`timeout:` (integer) The duration the messagebox is shown in milliseconds. Optional, defaults to 3000 (3 sec).
+`timeout:` (integer) The duration the messagebox/notification is shown in milliseconds. Optional, defaults to 3000 (3 sec).
 
 ## Styling ##
 
@@ -42,3 +42,7 @@ The messagebox can be styled with CSS, see [the css file]( leaflet-messagebox.cs
 # License
 
 Leaflet.Messagebox is free software. Please see [LICENSE](LICENSE) for details.
+
+# Misc
+Alternatives names of the plugin: **Leaflet notifications** and **Leaflet alerts**
+
