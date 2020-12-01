@@ -14,6 +14,9 @@ L.Control.Messagebox = L.Control.extend({
         var elem = this._container;
         elem.innerHTML = message;
         elem.style.display = 'block';
+        elem.setAttribute('role', 'status');
+        elem.setAttribute('aria-live', 'polite');
+        elem.setAttribute('aria-atomic', 'true');
 
         timeout = timeout || this.options.timeout;
 
