@@ -1,7 +1,8 @@
 L.Control.Messagebox = L.Control.extend({
     options: {
         position: 'topright',
-        timeout: 3000
+        timeout: 3000, 
+        default_style: 'leaflet-control-messagebox'
     },
 
     onAdd: function (map) {
@@ -10,13 +11,26 @@ L.Control.Messagebox = L.Control.extend({
         return this._container;
     },
 
-    show: function (message, timeout) {
+    show: function (message, timeout, style) {
         var elem = this._container;
         elem.innerHTML = message;
         elem.style.display = 'block';
 
         timeout = timeout || this.options.timeout;
+        style = style || this.options.default_style;
+	elem.className = this.options.default_style;
 
+	if ( style == 'error') {
+		elem.classList.add('leaflet-control-messagebox-error');
+	}
+	if ( style == 'warning') {
+		elem.classList.add('leaflet-control-messagebox-warning');
+	}
+	
+	if ( style == 'success') {
+		elem.classList.add('leaflet-control-messagebox-success');
+	}
+	
         if (typeof this.timeoutID == 'number') {
             clearTimeout(this.timeoutID);
         }
